@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's generate Password</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class=" bg-stone-900 py-3 m-auto block left-0 right-0 drop-shadow-lg  ">
+        <ul class="container flex justify-center px-16 items-center">
+            <li class="mx-5  font-mono text-3xl text-white">SecureMe </li>
+        </ul>
+    </nav>
+
+    <div class="grayscale min-h-screen w-full bg-no-repeat bg-cover bg-center  bg-gray-600 bg-opacity-50"
+        style="background-image: url(/Images/NewBg.jpg);">
+        <div class="container flex justify-center py-8 ">
+            <!-- Main Container -->
+            <div class="container bg-inherit w-3/4 border-2 border-white px-5 py-10 rounded-lg">
+                <div class="container">
+                    <h1 class="text-white font-extrabold font-mono text-2xl">Want to create a Strong random Password.
+                        Then
+                        you are at the right place.</h1>
+                    <hr>
+                    <h2 class="py-5 text-white font-extrabold font-mono text-xl">Enter the length of Password
+                        below.(recommended 8): <input id="pswrdLength"
+                            class="bg-transparent rounded-lg  border-2 w-20 border-white text-white mt-3" type="number">
+                    </h2>
+                    <button id="GBtn"
+                        class=" bg-stone-900 hover:bg-stone-700 border-2 rounded-lg border-white text-white m-auto block px-4 py-2">Generate</button>
+                    <h2 class=" py-5 text-white font-extrabold font-mono text-xl">Your Generated Password is here:-
+                        <span class="bg-transparent text-white " id="gPswrd">--------</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container w-full fixed left-0 bottom-0 bg-stone-900  text-white text-center py-3">
+        <p class="text-center text-white">Copyright &copy; SecureMe.com 2022</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
